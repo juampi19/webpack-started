@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    background-color: #03d3dc;
+
+}
+
+h1{
+    border: 3px solid black;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
