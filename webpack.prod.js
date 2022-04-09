@@ -28,18 +28,17 @@ module.exports = {
             },
 
             {
-                test: /\.css$/i,
-                exclude: /app.css$/,
-                use: ['style-loader', 'css-loader']
+                test: /\.(c|sc|sa)ss$/,
+                use: [
+                    {
+                        loader:MiniCssExtractPlugin.loader,
+                    },
+                    'css-loader',
+                    'sass-loader'
+                ]
             },
-
             {
-                test: /app.css$/,
-                use: [MiniCssExtractPlugin.loader, "css-loader"],
-
-            },
-            {
-                test: /\.(png|jpe?g|gif)$/,
+                test: /\.(jpe?g|png|gif|svg)$/i,
                 loader: 'file-loader',
             },
             {

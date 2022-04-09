@@ -1,9 +1,3 @@
-import { saludar, action } from './js/componentes';
 import './app.css';
-import './css/componets.css'
+import './scss/styles.scss';
 
-
-const nombre = 'juan';
-
-saludar( nombre );
-action('cookie');
